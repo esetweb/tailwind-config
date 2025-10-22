@@ -1,6 +1,6 @@
 {
-    "name": "@eset/tailwind-config",
-    "version": "1.0.0",
+    "name": "@eset-gdd/tailwind-config",
+    "version": "1.0.1",
     "description": "ESET brand colors and design tokens for Tailwind CSS",
     "main": "index.css",
     "exports": {
