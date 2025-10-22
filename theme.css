@@ -1,0 +1,53 @@
+/**
+ * ESET Design Tokens (OKLCH)
+ * Source: ESET Brand Book
+ * https://esetcom.sharepoint.com/sites/brand-book/SitePages/eset-colors-for-non-designers.aspx
+ *
+ * Notes:
+ * - For danger/errors use tailwind color-red (e.g. oklch(57.7% 0.245 27.325)).
+ *   (see https://tailwindcss.com/docs/colors).
+ * - Use of pure white (#ffffff) and pure black (#000000) is allowed as per Brand Book rules.
+ */
+
+@theme {
+  /* Main brand color */
+  --color-eset-brand: oklch(61.4% 0.105 203.964); /* #0096a1 */
+
+  /* Supporting turquoises */
+  --color-eset-turquoise-light: oklch(80.9% 0.072 200.294); /* #87cfd3 */
+  --color-eset-turquoise: oklch(72.1% 0.123 201.605); /* #00bbc5 */
+  --color-eset-turquoise-dark: oklch(50.3% 0.087 209.706); /* #00717f */
+  --color-eset-turquoise-deep: oklch(37.8% 0.065 209.981); /* #004b55 */
+
+  /* Neutrals */
+  --color-eset-slate-black: oklch(20.2% 0.03 243.696); /* #0a1823 */
+  --color-eset-slate-deep: oklch(41.4% 0.021 242.87); /* #424d56 */
+  --color-eset-slate-dark: oklch(68.8% 0.012 234.905); /* #949ca1 */
+  --color-eset-slate-cool: oklch(84.6% 0.023 224.906); /* #bdd0d8 */
+  --color-eset-slate: oklch(89.7% 0.005 145.532); /* #dbdedb */
+  --color-eset-slate-faint: oklch(96.9% 0.002 145.562); /* #f4f5f4 */
+
+  /* Greens */
+  --color-eset-green: oklch(76.1% 0.174 129.577); /* #8dc63f */
+  --color-eset-green-light: oklch(86.1% 0.139 126.408); /* #bae27a */
+
+  /* Oranges */
+  --color-eset-orange: oklch(80.2% 0.155 69.174); /* #feaa3a */
+  --color-eset-orange-light: oklch(87.9% 0.11 81.463); /* #fcd080 */
+
+  /* Salmons */
+  --color-eset-salmon: oklch(69.2% 0.197 33.086); /* #fe6142 */
+  --color-eset-salmon-light: oklch(73.2% 0.148 30.967); /* #f7816d */
+
+  /* Magentas */
+  --color-eset-magenta: oklch(56.6% 0.222 10.976); /* #d80b55 */
+  --color-eset-magenta-light: oklch(70.2% 0.173 348.447); /* #ea6cb1 */
+
+  /* Lavenders */
+  --color-eset-lavender: oklch(73.2% 0.101 299.208); /* #b19adf */
+  --color-eset-lavender-light: oklch(86% 0.052 298.892); /* #d5caef */
+
+  /* Blues */
+  --color-eset-blue: oklch(75.2% 0.143 225.169); /* #00c0f2 */
+  --color-eset-blue-light: oklch(84.5% 0.068 231.125); /* #9fd5f1 */
+}
