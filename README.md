@@ -10,10 +10,45 @@ Follow the official Tailwind CSS installation guide: [Tailwind CSS with Vite](ht
 **For Nuxt projects:**
 Plugin import may be slightly different - check the Nuxt documentation for the latest setup.
 
-## 2. Install @eset-gdd/tailwind-config
+## 2. Install codestyle and class sorting
+
+Install:
 
 ```bash
-npm install @eset-gdd/tailwind-config
+pnpm i @eset-gdd/code-styleguide-eslint-tailwind
+```
+
+Then add to your ESLint configuration:
+
+```js
+module.exports = {
+  root: true,
+  extends: ["@eset-gdd/code-styleguide-eslint-tailwind"],
+};
+```
+
+This should enable automatic class sorting.
+
+### Codestyle Troubleshooting
+
+Return to this step after completing the installation if automatic class sorting doesn’t work.
+
+1. Make sure ESLint is set as your default formatter:
+
+2. `Ctrl + Shift + P` → Format Document With... → Configure Default Formatter → select ESLint.
+
+3. If ESLint isn’t listed, ensure you have the ESLint extension
+
+If the extension is installed but ESlint is not listed as a formatter, or automatic class sorting still fails, check the ESLint server output:
+
+- `Ctrl + Shift + P` → ESLint: Show Output Channel.
+
+If you see errors there, a fairly common cause is a version mismatch between your project’s ESLint and the installed codestyle package.
+
+## 3. Install this package (tailwind configuration)
+
+```bash
+pnpm install @eset-gdd/tailwind-config
 ```
 
 ## 3. Replace your Tailwind import
@@ -48,7 +83,3 @@ To enable both, the **ESET theme** and the **IntelliSense for the ESET theme**, 
   "tailwindCSS.experimental.configFile": "./src/styles/tailwind.css" // <-- add this line (relative path to file importing "@eset-gdd/tailwind-config/index.css")
 }
 ```
-
-## 5. Class Autosorting
-
-Tailwind class autosorting is handled by the ESLint configuration `@eset-gdd/code-styleguide-eslint-tailwind` (installed automatically as a peer dependency).
