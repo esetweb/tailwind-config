@@ -12,6 +12,10 @@ Plugin import may be slightly different - check the Nuxt documentation for the l
 
 ## 2. Install codestyle and class sorting
 
+⚠️ Automatic class sorting **does not currently work** with the `tw:` prefix used to avoid conflicts with other libraries (such as Bootstrap). This is a limitation in `eslint-plugin-tailwindcss`. [Issue reference](https://github.com/francoismassart/eslint-plugin-tailwindcss/issues/427) 
+
+We’re waiting for an upstream fix.
+
 Install:
 
 ```bash
