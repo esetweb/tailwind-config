@@ -31,8 +31,7 @@
     "homepage": "https://github.com/esetweb/tailwind-config#readme",
     "license": "MIT",
     "peerDependencies": {
-        "tailwindcss": "^4.0.0",
-        "@eset-gdd/code-styleguide-eslint-tailwind4beta": "^1.0.0"
+        "tailwindcss": "^4.0.0"
     },
     "engines": {
         "node": ">=18.0.0"
